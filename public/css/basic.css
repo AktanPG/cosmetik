@@ -1,0 +1,22 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --future: 'Righteous', cursive;
+    --blue: rgb(0, 153, 255);
+}
+
+body::-webkit-scrollbar {
+    width: 10px;
+    background-color: var(--blue);
+}
+
+
+body::-webkit-scrollbar-thumb  {
+    border-radius: 50px;
+    width: 5px;
+    background-color: #ccc;
+}

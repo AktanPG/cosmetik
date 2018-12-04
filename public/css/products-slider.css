@@ -1,0 +1,40 @@
+.products-slider {
+    overflow: hidden;
+    padding: 1rem 1rem;
+    margin-bottom: 5rem;
+    width: 100%;
+    box-shadow: inset 0 0 10px #ccc;
+}
+
+.slider-container {
+    position: relative;
+    z-index: -1;
+}
+
+.slide {
+    box-shadow: 0 0 10px var(--blue);
+    padding-bottom: 1rem;
+    cursor: pointer;
+    margin: 0 1rem;
+    display: inline-block;
+    width: 200px;
+}
+
+.slide .img {
+    width: 100%;
+    height: 250px;
+}
+
+.title {
+    font-family: var(--future);
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
+    color: var(--blue);
+}
+
+.cost {
+    font-family: var(--future);
+    opacity: 0.8;
+    text-align: center;
+}

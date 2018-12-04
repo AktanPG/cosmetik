@@ -1,0 +1,50 @@
+.bimage {
+    width: 100%;
+    height: 100vh;
+    background: url('https://res.cloudinary.com/grami/image/upload/v1543918299/girl_makeup-wallpaper-2560x1600.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.slogan {
+    font-size: 3rem;
+    font-family: var(--future);
+    color: var(--blue);
+    background-color: rgba(255, 255, 255, 0.808);
+    padding: 0 0.5rem;
+    position: absolute;
+    left: 10%;
+}
+
+.main {
+    width: 1024px;
+    margin: 0 auto;
+}
+
+.main .title-section {
+    text-align: center;
+    margin: 2rem 0;
+    font-family: var(--future);
+    color: rgba(0, 0, 0, 0.712);
+}
+
+@media (max-width: 1024px) {
+    .main {
+        width: 100%;
+    }
+}
+
+@media (max-width: 750px) {
+    .bimage {
+        height: 50vh;
+    }
+    .slogan {
+        font-size: 1.5rem;
+    }
+}
