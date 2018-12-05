@@ -15,7 +15,7 @@
 .slogan {
     font-size: 3rem;
     font-family: var(--future);
-    color: tomato;
+    color: var(--blue);
     background-color: rgba(255, 255, 255, 0.808);
     padding: 0 0.5rem;
     position: absolute;
@@ -99,7 +99,7 @@
 }
 
 .about .section i {
-    color: tomato;
+    color: var(--blue);
     font-size: 10rem;
     opacity: 0.9;
     border-radius: 50%;
@@ -115,7 +115,7 @@
     color: #fff;
     font-size: 2rem;
     font-family: var(--future);
-    background-color: tomato;
+    background-color: var(--blue);
     border-radius: 10px;
     padding: 0.1rem;
 }

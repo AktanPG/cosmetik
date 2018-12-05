@@ -41,7 +41,7 @@ header {
 
 .navbar .logout {
     padding: 0.5rem 1rem;
-    background-color: tomato;
+    background-color: var(--blue);
     border-radius: 50px;
     color: #fff;
     font-family: var(--future);
