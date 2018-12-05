@@ -27,12 +27,99 @@
     margin: 0 auto;
 }
 
-.main .title-section {
+.title-section {
     text-align: center;
-    margin: 2rem 0;
     font-family: var(--future);
-    color: rgba(0, 0, 0, 0.712);
+    color: rgba(0, 0, 0, 0.699);
+    margin: 3rem 0;
 }
+
+.new {
+    display: flex;
+    margin-bottom: 3rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.new .product {
+    flex-basis: 190px;
+    box-shadow: 0 0 5px 1px var(--blue);
+    cursor: pointer;
+    transition: box-shadow 0.5s;
+    margin: calc((1024px - 190px * 5) / 5 / 2);
+    margin-bottom: 2rem;
+    box-flex: none;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.new .product:hover {
+    box-shadow: none;
+}
+
+.new .product .product-image {
+    width: 100%;
+    height: 200px;
+}
+
+.new .product .information {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--blue);
+    min-height: calc(100% - 200px);
+    padding-bottom: 1rem;
+    box-shadow: -2px 0 5px 1px var(--blue);
+    position: relative;
+    z-index: 2;
+}
+
+.new .title {
+    padding: 0 0.5rem;
+    color: #fff;
+}
+
+.about {
+    background: url('https://res.cloudinary.com/grami/image/upload/v1544017084/brushes_cosmetics_set_114242_3840x2400.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 100vh;
+    margin-top: 8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-bottom: 3rem;
+}
+
+.about .section {
+    margin: 0 3rem;
+}
+
+.about .section i {
+    color: #fff;
+    font-size: 10rem;
+    opacity: 0.9;
+    border-radius: 50%;
+    padding: 2rem;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.about .section .text {
+    width: 200px;
+    text-align: center;
+    color: #fff;
+    font-size: 2rem;
+    font-family: var(--future);
+    background-color: var(--blue);
+    border-radius: 10px;
+    padding: 0.1rem;
+}
+
 
 @media (max-width: 1024px) {
     .main {
@@ -43,5 +130,11 @@
 @media (max-width: 750px) {
     .slogan {
         font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 592px) {
+    .about .section {
+        margin: 2rem 3rem;
     }
 }

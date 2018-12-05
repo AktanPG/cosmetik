@@ -7,6 +7,7 @@
     <title>Brand</title>
     <link rel="stylesheet" href="/assets/css/index.css">
     <link rel="stylesheet" href="/assets/css/products-slider.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <%- include('components/fonts')%>
 </head>
 <body>
@@ -18,96 +19,42 @@
         </div>
     </div>
     <main class="main">
-        <h1 class="title-section">Most Popular</h1>
-        <div class="products-slider">
-    <div class="slider-container" data-count="7" style="width: calc(7 * (200px + 64px));">
-        <div class="slide">
-            <div 
-                class="img"
-                style="background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmwn4rN0xXqdAxweAn46vkfrn2ut9LJ1Y2uuu61U-Iv7ZHYJuAbg') center center / cover;"
-            ></div>
-            <div class="title">
-                Памада QusdLayer
-            </div>
-            <div class="cost">
-                3000 KGS
-            </div>
+        <h1 class="title-section">New Collection</h1>
+        <div class="new">
+            <% products.forEach((product) => { %>
+                <div class="product">
+                    <div 
+                        class="product-image"
+                        style="background: url('<%= product.images[0]%>') center center / cover"
+                    >
+                    </div>
+                    <div class="information">
+                        <div class="title"><%= product.title%></div>
+                        <div class="cost"><%= product.cost%> KGS</div>
+                    </div>
+                </div>
+            <% }) %>
         </div>
-        <div class="slide">
-            <div 
-                class="img"
-                style="background: url('http://picua.org/img/2018-04/03/r28dh3qdg6d1tpktwumqpdgwi.jpg') center center / cover;"
-            ></div>
-            <div class="title">
-                compect SkfPLAT
-            </div>
-            <div class="cost">
-                9600 KGS
-            </div>
-        </div>
-        <div class="slide">
-            <div 
-                class="img"
-                style="background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmwn4rN0xXqdAxweAn46vkfrn2ut9LJ1Y2uuu61U-Iv7ZHYJuAbg') center center / cover;"
-            ></div>
-            <div class="title">
-                Памада QusdLayer
-            </div>
-            <div class="cost">
-                3000 KGS
-            </div>
-        </div>
-        <div class="slide">
-            <div 
-                class="img"
-                style="background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmwn4rN0xXqdAxweAn46vkfrn2ut9LJ1Y2uuu61U-Iv7ZHYJuAbg') center center / cover;"
-            ></div>
-            <div class="title">
-                Памада QusdLayer
-            </div>
-            <div class="cost">
-                3000 KGS
-            </div>
-        </div>
-        <div class="slide">
-            <div 
-                class="img"
-                style="background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmwn4rN0xXqdAxweAn46vkfrn2ut9LJ1Y2uuu61U-Iv7ZHYJuAbg') center center / cover;"
-            ></div>
-            <div class="title">
-                Памада QusdLayer
-            </div>
-            <div class="cost">
-                3000 KGS
-            </div>
-        </div>
-        <div class="slide">
-            <div 
-                class="img"
-                style="background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmwn4rN0xXqdAxweAn46vkfrn2ut9LJ1Y2uuu61U-Iv7ZHYJuAbg') center center / cover;"
-            ></div>
-            <div class="title">
-                Памада QusdLayer
-            </div>
-            <div class="cost">
-                3000 KGS
-            </div>
-        </div>
-        <div class="slide">
-            <div 
-                class="img"
-                style="background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmwn4rN0xXqdAxweAn46vkfrn2ut9LJ1Y2uuu61U-Iv7ZHYJuAbg') center center / cover;"
-            ></div>
-            <div class="title">
-                Памада QusdLayer
-            </div>
-            <div class="cost">
-                3000 KGS
-            </div>
-        </div>
-    </div>
-</div>
     </main>
-    <script src="/assets/js/index.js"></script>
+    <div class="about">
+        <div class="section">
+            <i class="fa fa-truck"></i>
+            <div class="text">
+                Fast delivery
+            </div>   
+        </div>
+        <div class="section">
+            <i class="fa fa-globe"></i>
+            <div class="text">
+                There is all
+            </div>   
+        </div>
+        <div class="section">
+            <i class="fa fa-dollar"></i>
+            <div class="text">
+                Low prices
+            </div>   
+        </div>
+    </div>       
 </body>
 </html>
