@@ -15,7 +15,7 @@
 .slogan {
     font-size: 3rem;
     font-family: var(--future);
-    color: var(--blue);
+    color: tomato;
     background-color: rgba(255, 255, 255, 0.808);
     padding: 0 0.5rem;
     position: absolute;
@@ -81,7 +81,7 @@
 }
 
 .about {
-    background: url('https://res.cloudinary.com/grami/image/upload/v1544017084/brushes_cosmetics_set_114242_3840x2400.jpg');
+    background: url('https://res.cloudinary.com/grami/image/upload/v1544020150/11516708346xy0cvsmmkdjhlkzxrffku0xvxgrmt6kkfoawc5tvley6qbvmbisthu8d6gueqx22rtlyiwq7cp5p9hlnl0j6vdb0c8oxggcc8sai.jpg');
     background-position: center center;
     background-size: cover;
     background-attachment: fixed;
@@ -99,7 +99,7 @@
 }
 
 .about .section i {
-    color: #fff;
+    color: tomato;
     font-size: 10rem;
     opacity: 0.9;
     border-radius: 50%;
@@ -115,7 +115,7 @@
     color: #fff;
     font-size: 2rem;
     font-family: var(--future);
-    background-color: var(--blue);
+    background-color: tomato;
     border-radius: 10px;
     padding: 0.1rem;
 }
